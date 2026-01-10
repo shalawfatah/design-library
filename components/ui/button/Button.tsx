@@ -3,7 +3,7 @@ import { cn } from "@/lib/cn";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "destructive";
   size?: "sm" | "md" | "lg";
 }
 
@@ -12,6 +12,8 @@ const variantStyles = {
   secondary:
     "bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700",
   ghost: "bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800",
+  destructive:
+    "bg-destructive text-destructive-foreground hover:bg-destructive/90",
 };
 
 const sizeStyles = {

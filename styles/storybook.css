@@ -1,3 +1,5 @@
+@import "../app/globals.css";
+/* styles/storybook.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
