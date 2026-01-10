@@ -1,6 +1,6 @@
 # Design Library
 
-A production-ready design library based on Tailwind with reusable components, consistent styling, and developer-friendly APIs.
+A production-ready design library based on Tailwind with reusable components, consistent styling, and developer-friendly APIs...
 
 ## Installation
 
