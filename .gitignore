@@ -59,3 +59,5 @@ Thumbs.db
 # Misc
 # ===============================
 coverage/
+
+*storybook.log
