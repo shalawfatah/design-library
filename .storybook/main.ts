@@ -2,7 +2,7 @@ import type { StorybookConfig } from "@storybook/nextjs";
 
 const config: StorybookConfig = {
   stories: [
-    "../components/**/*.stories.@(ts|tsx)", // <-- THIS should match your Button.stories.tsx
+    "../components/**/*.stories.@(ts|tsx)",
   ],
   addons: [],
   framework: {
