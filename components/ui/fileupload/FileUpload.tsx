@@ -51,14 +51,13 @@ export const FileUpload = React.forwardRef<HTMLDivElement, FileUploadProps>(
         ref={ref}
         {...props}
       >
-        <label className="font-medium">{label}</label>
-
+        <label className="text-sm font-medium text-foreground">{label}</label>
         <div
           className={cn(
             "relative border-2 border-dashed rounded-md p-6 text-center cursor-pointer transition-colors",
             dragActive
               ? "border-primary bg-primary/10"
-              : "border-muted hover:border-foreground",
+              : "border-input hover:border-foreground",
           )}
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
@@ -73,12 +72,10 @@ export const FileUpload = React.forwardRef<HTMLDivElement, FileUploadProps>(
             ref={inputRef}
             onChange={(e) => e.target.files && handleFiles(e.target.files)}
           />
-
           <p className="text-sm text-muted-foreground">
             Drag & drop files here or click to select
           </p>
         </div>
-
         {preview && files.length > 0 && (
           <div className="grid grid-cols-3 gap-2 mt-2">
             {files.map((file, i) => {
